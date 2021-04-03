@@ -6,6 +6,7 @@ class Cereal(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(256))
     mfr = db.Column(db.String(1))
+    grade = db.Column(db.String(1))
     calories = db.Column(db.Integer)
     protein = db.Column(db.Integer)
     fat = db.Column(db.Integer)
@@ -20,5 +21,3 @@ class Cereal(db.Model):
     cups = db.Column(db.Float(precision=5))
     rating = db.Column(db.Float(precision=5))
 
-
-#name	mfr	type	calories	protein	fat	sodium	fiber	carbo	sugars	potass	vitamins	shelf	weight	cups	rating
