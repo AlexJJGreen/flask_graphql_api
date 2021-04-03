@@ -6,6 +6,10 @@
     <title> GraphQL API</title>
 </head>
 <body>
+    <ul>
+        <li><a href="{{ url_for('index') }}"></a>Home</li>
+        <li><a href="{{ url_for('graphql') }}"></a>API Interface</li>
+    </ul>
     {% block content %}
     {% endblock %}
 </body>
