@@ -12,7 +12,7 @@ The architecture has been redesigned to Flask Blueprint/ App Factory standards b
 
 If you know the app_factory patterns for Flask, this should all be straight forward to understand. Rather than screw around with engines and declaritives for the database, this has been abstracted out with an unbound instance of the SQLAlchemy object created at blueprint level which encorporates engines, sessions, ORM, connection pools et al. This is then passed up to top level, where it's init'd and bound to the app within the app context and created, alongside a top level instance of Migrate just to keep DB migrations simple should this template ever be used for another project. At the blueprint level, tables are created using the SQLAlchemy object and object relational mapping; with Classes inhereting from the SQLAlchemy Model object representing tables.
 
-Consequently Graphene has been used to interact with GraphQL as opposed to Adriane; Graphene is 'code-first' as opposed to Adrianes 'schema first' approach. This means that schemas are derived from code (objects) as opposed to objects being derived from schemas. As ORM is being used for the database, utilizing ORM for the interaction with the database allows models to essentially be 'copy-pasted' from DB logic to API logic, eliminating a level of complexity.
+Consequently Graphene has been used to interact with GraphQL as opposed to Adiadne; Graphene is 'code-first' as opposed to Ariadnes 'schema first' approach. This means that schemas are derived from code (objects) as opposed to objects being derived from schemas. As ORM is being used for the database, utilizing ORM for the interaction with the database allows models to essentially be 'copy-pasted' from DB logic to API logic, eliminating a level of complexity.
 
 << TALK ABOUT GraphQL LOGIC >>
 
@@ -28,7 +28,7 @@ LG,
 
 AlexJJGreen
 
-test query for api ui
+### test query for api ui
 
 {
   allCereals {
